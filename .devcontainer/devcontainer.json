@@ -30,10 +30,21 @@
 			"onAutoForward": "notify"
 		}
 	},
-
+	
+		"editor.inlineSuggest.enabled": true,
+		"github.copilot.enable": {
+			"*": true,
+			"yaml": false,
+			"plaintext": false,
+			"markdown": true,
+			"javascript": true,
+			"python": true
+		},
+	
 	// Use 'postCreateCommand' to run commands after the container is created.
 	"postCreateCommand": "pip3 install -r requirements.txt"
 
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
 }
+
